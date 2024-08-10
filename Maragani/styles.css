@@ -1,0 +1,163 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+/* Navigation Bar */
+#nav-bar {
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+
+#nav-bar-left {
+  display: flex;
+  padding: 30px;
+}
+
+/* 
+#logo {
+  transition: none;
+  transform: none;
+} */
+
+#logo img {
+  width: 60px;
+  height: 60px;
+  user-select: none;
+}
+
+#nav-bar-left p {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: larger;
+  text-align: center;
+  justify-content: center;
+}
+
+#nav-bar-right {
+  display: flex;
+  width: 50%;
+  background-color: black;
+  justify-content: space-evenly;
+  padding: 30px;
+  margin-right: 10px;
+}
+
+/* Global Link Styles */
+a {
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  color: grey;
+  transition: transform 0.3s ease-in-out;
+  user-select: none;
+}
+
+a:hover {
+  cursor: pointer;
+  user-select: none;
+  transform: scale(1.5);
+}
+
+a:active,
+:focus {
+  color: white;
+  border-bottom: 2px solid grey;
+  user-select: none;
+}
+
+#about {
+  color: white;
+  display: flex;
+  align-items: center;
+  min-height: 60vh;
+  user-select: none;
+}
+
+#about h1 {
+  display: block;
+}
+
+#about p {
+  display: block;
+}
+
+#technologies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+#tech-icons {
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+}
+
+#tech-icons:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+#tech-icons #img__description {
+  visibility: hidden;
+}
+
+#tech-icons:hover #img__description {
+  visibility: visible;
+  color: whitesmoke;
+  user-select: none;
+}
+
+#resume {
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+}
+
+a #button {
+  background-color: gold;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  height: fit-content;
+  width: fit-content;
+}
+
+#button:active {
+  color: black;
+  box-shadow: 0px -1px white;
+  transform: translateX(1px);
+}
+
+/* Footer */
+#footer {
+  bottom: auto;
+  left: 0;
+  right: 0;
+  background-color: black;
+  color: grey;
+  position: absolute;
+  text-align: center;
+  user-select: none;
+}
+
+#footer a {
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+}
